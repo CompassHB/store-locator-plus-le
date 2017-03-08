@@ -1,0 +1,10 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">store_page</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">stores</taxonomy>
+    </taxonomies>
+</wpml-config>
+
+
