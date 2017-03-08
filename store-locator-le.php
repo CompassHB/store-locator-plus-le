@@ -7,7 +7,8 @@ Author: Store Locator Plus
 Author URI: https://www.storelocatorplus.com
 License: GPL3
 Tested up to: 4.7.2
-Version: 4.7.6
+Version: 4.7.6.00
+GitHub Plugin URI: compasshb/store-locator-plus-le
 
 Text Domain: store-locator-le
 Domain Path: /languages/

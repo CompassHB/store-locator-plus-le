@@ -187,14 +187,15 @@ if ( ! class_exists('SLP_REST_Handler') ) {
             $offset = 0;
             do {
 
-                $location = $this->slplus->database->get_Record(array('selectslid', 'where_default'), array(), $offset++);
+                $location = $this->slplus->database->get_Record(array('selectall', 'where_default'), array(), $offset++);
 
                 if ( is_wp_error( $location ) ) { return $location; }
 
                 if ( ! empty ( $location['sl_id'] ) ) {
-                    $location_list[] = array( 'sl_id' => $location['sl_id'] );
+                    $location_list[] = array( 'sl_id' => $location['sl_id'], 'sl_latitude' => $location['sl_latitude'], 'sl_longitude' => $location['sl_longitude'] );
                 }
             } while ( ! empty ( $location['sl_id'] ) );
+
 
 
             $response = new WP_REST_Response( $location_list );
